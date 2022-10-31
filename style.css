@@ -1,0 +1,71 @@
+.general{ 
+    box-sizing: border-box;
+    width: 336px;
+    height: 300px;
+    margin-left: 408px;
+    margin-top: 232px;
+    box-shadow: 2px;
+    border-radius:10px;
+    border: 1px solid #c4c4c4;
+   
+
+}
+
+.div{
+    background-color: #FFDC40 ;
+    border-radius: 10px 10px 0 0 ;
+    width: 336px;
+    height: 28px;
+}
+h1{
+    background-color: white;
+    margin-top: 17px;
+    margin-left: 85px;
+    margin-right: 87px;
+    margin-bottom: 39px;
+}
+.input{
+    margin-left: 28px;
+    margin-right: 22px;
+    border-radius: 10px;
+    width:280px;
+    height: 30px;
+}
+ .button{
+    width: 42px;
+    height: 42px;
+    background-color: #9953F1;
+    border-radius: 71px;
+ }
+.add{
+    display: flex;
+    height: 42px;
+    margin-left:77px ;
+    margin-right: 109px;
+    background-color: #833ae0;
+    border-radius: 71px;
+    margin-top: 70px;
+
+}
+
+.добавить{
+   margin: auto;
+   color: white;
+
+}
+.plus{
+    border-radius: 42px;
+    font-weight: 400;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+.imgone{
+    margin-left: 270px;
+    margin-bottom: 12px;
+}
+.imgtwo{
+    margin-left:250px;
+    margin-top:0px; 
+}
