@@ -1,7 +1,7 @@
 .general{ 
     box-sizing: border-box;
     width: 336px;
-    height: 300px;
+    height: auto;
     margin-left: 408px;
     margin-top: 232px;
     box-shadow: 2px;
@@ -30,6 +30,8 @@ h1{
     border-radius: 10px;
     width:280px;
     height: 30px;
+    border: none;
+    outline: none;
 }
  .button{
     width: 42px;
@@ -45,13 +47,24 @@ h1{
     background-color: #833ae0;
     border-radius: 71px;
     margin-top: 70px;
+    margin-bottom: 14px;
+    color: white;
 
 }
-
-.добавить{
-   margin: auto;
-   color: white;
-
+.group{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid black;
+    margin: auto;
+    border-radius: 20px;
+}
+#addTo{
+  
+margin:0;
+margin-top: 12px;
+margin-left: 5px;
+   
 }
 .plus{
     border-radius: 42px;
@@ -66,6 +79,32 @@ h1{
     margin-bottom: 12px;
 }
 .imgtwo{
-    margin-left:250px;
+    position: relative;
     margin-top:0px; 
+}
+.imgtwo img{
+    position: absolute;
+    top: 6px;
+    left: -30px;
+     
+}
+#myUL{
+    border: 1px solid black;
+    list-style-type: none;
+    border-radius: 10px;
+    margin-left: 28px;
+    margin-right: 22px;
+    background-color:#f7f5f0;
+    
+}
+#myUL img{
+     margin-left: 5px;
+}
+#myUL li :hover{
+    background-color: #ddd;
+    border-radius:10px; 
+}   
+li{
+    display: flex;
+    justify-content: space-between;
 }
