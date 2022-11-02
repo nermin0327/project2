@@ -1,48 +1,52 @@
-.general{ 
+.general {
     box-sizing: border-box;
     width: 336px;
     height: auto;
     margin-left: 408px;
     margin-top: 232px;
     box-shadow: 2px;
-    border-radius:10px;
+    border-radius: 10px;
     border: 1px solid #c4c4c4;
-   
+
 
 }
 
-.div{
-    background-color: #FFDC40 ;
-    border-radius: 10px 10px 0 0 ;
+.div {
+    background-color: #FFDC40;
+    border-radius: 10px 10px 0 0;
     width: 336px;
     height: 28px;
 }
-h1{
+
+h1 {
     background-color: white;
     margin-top: 17px;
     margin-left: 85px;
     margin-right: 87px;
     margin-bottom: 39px;
 }
-.input{
+
+.input {
     margin-left: 28px;
     margin-right: 22px;
     border-radius: 10px;
-    width:280px;
+    width: 280px;
     height: 30px;
     border: none;
     outline: none;
 }
- .button{
+
+.button {
     width: 42px;
     height: 42px;
     background-color: #9953F1;
     border-radius: 71px;
- }
-.add{
+}
+
+.add {
     display: flex;
     height: 42px;
-    margin-left:77px ;
+    margin-left: 77px;
     margin-right: 109px;
     background-color: #833ae0;
     border-radius: 71px;
@@ -51,7 +55,8 @@ h1{
     color: white;
 
 }
-.group{
+
+.group {
     width: 80%;
     display: flex;
     justify-content: space-between;
@@ -59,14 +64,16 @@ h1{
     margin: auto;
     border-radius: 20px;
 }
-#addTo{
-  
-margin:0;
-margin-top: 12px;
-margin-left: 5px;
-   
+
+#addTo {
+
+    margin: 0;
+    margin-top: 12px;
+    margin-left: 5px;
+
 }
-.plus{
+
+.plus {
     border-radius: 42px;
     font-weight: 400;
     font-size: 14px;
@@ -74,37 +81,59 @@ margin-left: 5px;
     justify-content: center;
     color: white;
 }
-.imgone{
+
+.imgone {
     margin-left: 270px;
     margin-bottom: 12px;
+
 }
-.imgtwo{
+
+.img1:hover {
+    background-color: black;
+}
+
+.imgtwo {
     position: relative;
-    margin-top:0px; 
+    margin-top: 0px;
 }
-.imgtwo img{
+
+.imgtwo img {
     position: absolute;
     top: 6px;
     left: -30px;
-     
+
 }
-#myUL{
+
+#myUL {
     border: 1px solid black;
     list-style-type: none;
     border-radius: 10px;
     margin-left: 28px;
     margin-right: 22px;
-    background-color:#f7f5f0;
-    
+    background-color: #FFDC40;
+    padding: 0;
+    padding: 10px;
+
 }
-#myUL img{
-     margin-left: 5px;
+
+#myUL img {
+    margin-left: 5px;
 }
-#myUL li :hover{
-    background-color: #ddd;
-    border-radius:10px; 
-}   
-li{
+
+#myUL li :hover {
+    background-color: #833ae0 ;
+  
+    border-radius: 10px;
+}
+
+li {
+    border-radius: 10px;
     display: flex;
+    margin-bottom: 3px;
     justify-content: space-between;
+    background-color: white;
+    padding-left: 5%;
+    padding-right: 2%;
+    padding-top: 2px;
+    padding-bottom: 2px;
 }

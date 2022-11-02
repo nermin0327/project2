@@ -2,6 +2,8 @@ const addTo = document.querySelector("#addTo");
 const input = document.querySelector(".input");
 const ulList = document.querySelector("#myUL");
 const imgtwo = document.querySelector(".imgtwo");
+const sortButton2 = document.querySelector('.img2')
+
 
 addTo.addEventListener("click",(e)=>{
     
@@ -17,9 +19,14 @@ ulList.addEventListener("click",(e)=>{
   }
 })
 
-const sortButton = document.querySelector('.imgone>img')
+const sortButton = document.querySelector('.img1')
 
-sortButton.addEventListener("click", () => {
+let liElements = document.getElementById('myUL')
+
+if(sortButton.addEventListener('click',()=>{
+    sortButton2.style.display = 'block';
+    sortButton.style.display = 'none';
+    sortButton2.style.marginBottom = '20px';
     let ar = []
     const data = [...liElements?.children]
     data.forEach(item => {
@@ -32,65 +39,98 @@ sortButton.addEventListener("click", () => {
 
         liElements.innerHTML += li
     })
-})
+    ar.sort((c,t)=>{
+        if (c > t) {
+            return -1;
+            }
+            if (c < t) {
+              return 1;
+            }
+            // a bərabərdir b
+            return 0;
+    
+
+    })
+ 
+
+ }))
+      
+  
+if(sortButton2.addEventListener('click',()=>{
+    sortButton.style.display = 'none';
+    sortButton2.style.display = 'block'
+    // let liElements = document.getElementById('myUL')
+// sortButton2.addEventListener("click", () => {
+//     let ar = []
+//     const data = [...liElements?.children]
+//     data.forEach(item => {
+//         ar.push(item.innerHTML)
+//     })
+//     ar.sort();
+//     liElements.innerHTML = ""
+//     ar.forEach(item => {
+//         let li = `<li>${item}   </li>`
+
+//         liElements.innerHTML += li
+//     })
+//     ar.sort((c,t)=>{
+//         if (c < t) {
+//             return -1;
+//             }
+//             if (c > t) {
+//               return 1;
+//             }
+//             // a bərabərdir b
+//             return 0;
+    
+
+//     })
+
+})){
+
+}
+
+
+
+ 
 
 
 
 
+    // ar.sort((c,t)=>{
+    //     if (c < t) {
+    //         return -1;
+    //         }
+    //         if (c >t) {
+    //           return 1;
+    //         }
+    //         // a bərabərdir b
+    //         return 0;
+
+  
+    // })
+    
+
+   
 
 
 
-// let myNodelist = document.getElementsByTagName("LI");
+// let arr = ["z","b","c"]
 
-// for (i = 0; i < myNodelist.length; i++) {
-//     let span = document.createElement("SPAN");
-//     let txt = document.createTextNode("\u00D7");
-//     span.className = "close";
-//     span.appendChild(txt);
-//     myNodelist[i].appendChild(span);
-// }
-
-
-// let close = document.getElementsByClassName("close");
-
-// for (let i = 0; i < close.length; i++) {
-//     close[i].onclick = function () {
-//         let div = this.parentElement;
-//         div.style.display = "none";
-//     }
-// }
-
-
-// let list = document.querySelector('ul');
-// list.addEventListener('click', function (ev) {
-//     if (ev.target.tagName === 'LI') {
-//         ev.target.classList.toggle('checked');
-//     }
-// }, false);
-
-
-// function newElement() {
-//     let li = document.createElement("li");
-//     let inputValue = document.getElementById("myInput").value;
-//     let t = document.createTextNode(inputValue);
-//     li.appendChild(t);
-//     if (inputValue === '') {
-//         alert("Bir sheyler elave et!");
-//     } else {
-//         document.getElementById("myUL").appendChild(li);
-//     }
-//     document.getElementById("myInput").value = "";
-
-//     let span = document.createElement("SPAN");
-//     let txt = document.createTextNode("\u00D7");
-//     span.className = "close";
-//     span.appendChild(txt);
-//     li.appendChild(span);
-
-//     for (i = 0; i < close.length; i++) {
-//         close[i].onclick = function () {
-//             let div = this.parentElement;
-//             div.style.display = "none";
+// arr.sort((c,t)=>{
+//     if (c > t) {
+//         return -1;
 //         }
-//     }
-// }
+//         if (c < t) {
+//           return 1;
+//         }
+//         // a bərabərdir b
+//         return 0;
+// })
+
+// console.log(arr)
+
+
+
+
+
